@@ -36,11 +36,9 @@ void loop() {
     Serial.print(":");
     
     if (sec < 60) {
-      Serial.print(sec);
+      Serial.println(sec);
     } else {
-      Serial.print(sec % 60);
+      Serial.println(sec % 60);
     }
-    Serial.print("\n");
-
   }
 }
