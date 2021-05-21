@@ -15,11 +15,26 @@ void loop() {
     sec = time_dt / 1000;
     mint = sec / 60;
     hour = mint / 60;
+    day = hour / 24;
 
+    
+    
+    if(hour < 24){
     Serial.print(hour);
+    }else{
+    Serial.print(hour % 24);
+    }
+    
+      Serial.print(":");
+    
+    if(mint < 60){
+      Serial.print(mint);
+    }else{
+      Serial.print(mint % 60);
+    }
+    
     Serial.print(":");
-    Serial.print(mint);
-    Serial.print(":");
+    
     if (sec < 60) {
       Serial.print(sec);
     } else {
