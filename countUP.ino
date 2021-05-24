@@ -2,7 +2,7 @@ unsigned long time_dt = 0;
 unsigned long sec = 0;
 unsigned long mint = 0;
 unsigned long hour = 0;
-
+unsigned long day = 0;
 
 void setup() {
   Serial.begin(9600);
